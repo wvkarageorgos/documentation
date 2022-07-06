@@ -70,8 +70,8 @@ $ jupyter server list --jsonlist | jq -r .[].token
 Now point your browser to `http://<your VM's IP>` and you will be able to enter
 the token to get started with Jupyter.
 
-You can install additional packages with mamba from a terminal started from
-Jupyter or via ssh. For example for installing `tensorflow`:
+You can install additional packages with `micromamba` from a terminal started from
+jupyter or via ssh (as user `jovyan`). For example for installing `tensorflow`:
 
 ```shell
 $ micromamba activate
@@ -94,7 +94,7 @@ values to get access to DataHub:
 
 ![Edit mount.sh](edit-mount.sh.png)
 
-Open a terminal from the launcher screen and execute the `mount.sh` script:
+Open a terminal from the launcher screen and execute the `./mount.sh` script:
 
 ![mount-onedata](run-mount.sh.png)
 
